@@ -1,13 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Counter from './features/counter/Counter';
+import Details from './Pages/Details';
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <Routes>
-        <Route path="/" element={<Counter />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<Details />} />
       </Routes>
     </div>
   );
