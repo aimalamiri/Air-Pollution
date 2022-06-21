@@ -27,21 +27,7 @@ const initialState = {
 const city = createSlice({
   name: 'city',
   initialState,
-  reducers: {
-    // [getCity.pending]: (state) => {
-    //   state.loading = true;
-    // },
-    // [getCity.rejected]: (state, action) => {
-    //   state.loading = false;
-    //   console.log(action.payload);
-    //   state.error = action.payload;
-    // },
-    // [getCity.fulfilled]: (state, action) => {
-    //   state.loading = false;
-    //   console.log(action.payload);
-    //   state.data = action.payload;
-    // },
-  },
+  // reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getCity.pending, (state) => {
       state.loading = true;
