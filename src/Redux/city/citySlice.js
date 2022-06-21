@@ -6,16 +6,10 @@ import { REACT_APP_API_KEY } from '../../services/environment';
 const getCity = createAsyncThunk('city/getCity', async (name) => axios
   .get(`weather?q=${name}&APPID=${REACT_APP_API_KEY}`)
   .then((response) => {
-    console.log('First then');
-    console.log(response);
     if (!response.statusText === 'OK') throw Error(response.statusText);
     return response.data;
   })
-  .then((json) => {
-    console.log('Second then');
-    console.log(json);
-    return json;
-  })
+  .then((json) => json)
   .catch((error) => error));
 
 const initialState = {
@@ -27,7 +21,6 @@ const initialState = {
 const city = createSlice({
   name: 'city',
   initialState,
-  // reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getCity.pending, (state) => {
       state.loading = true;
