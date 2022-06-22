@@ -5,7 +5,7 @@ const CityCard = (props) => {
   const { city } = props;
   return (
     <Link to={`/${city.Name}`}>
-      <div className="p-2 shadow bg-gradient-to-br from-blue-400 to-indigo-700">
+      <div className="p-2 shadow bg-gradient-to-br from-blue-400 to-indigo-700 min-h-full">
         <div className="flex justify-center">
           <img
             src={`https://countryflagsapi.com/svg/${city.Country}`}
