@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the CityCard component 1`] = `
+<a
+  href="/Kabul"
+  onClick={[Function]}
+>
+  <div
+    className="p-2 shadow bg-gradient-to-br from-blue-400 to-indigo-700 min-h-full"
+  >
+    <div
+      className="flex justify-center"
+    >
+      <img
+        alt="undefined flag"
+        className="w-1/2 opacity-20"
+        src="https://countryflagsapi.com/svg/undefined"
+      />
+    </div>
+    <div
+      className="flex flex-wrap justify-end mt-5 font-bold text-sm text-white"
+    >
+      <div>
+        <h3
+          className="uppercase"
+        >
+          Kabul
+        </h3>
+        <div
+          className=""
+        >
+          <h5>
+            7,000,000
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
