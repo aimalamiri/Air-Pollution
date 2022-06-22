@@ -13,7 +13,7 @@ const getCity = createAsyncThunk('city/getCity', async (name) => axios
   .catch((error) => error));
 
 const initialState = {
-  loading: false,
+  loading: true,
   error: '',
   city: {},
 };
