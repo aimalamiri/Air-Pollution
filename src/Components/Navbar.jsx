@@ -5,7 +5,7 @@ import microphone from '../assets/svg/microphone.svg';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-pink-600 py-2 px-3">
+    <nav className="flex justify-between items-center bg-pink-600 py-2 px-4">
       <Link to="/" className="text-blue-600 hover:text-blue-500">
         <img src={leftArrow} alt="icon" className="h-4" />
       </Link>
