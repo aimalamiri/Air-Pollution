@@ -3,26 +3,27 @@ import { Link } from 'react-router-dom';
 
 const CityCard = (props) => {
   const { city } = props;
+
+  const numberShortener = (number) => `${(number / 1000000).toFixed(1)}M`;
+
   return (
-    <Link to={`/${city.Name}`}>
-      <div className="p-2 shadow bg-gradient-to-br from-blue-400 to-indigo-700 min-h-full">
+    <div className="city-card p-2 shadow bg-gradient-to-tl from-blue-700 to-blue-300 min-h-full">
+      <Link to={`/${city.Name}`}>
         <div className="flex justify-center">
           <img
             src={`https://countryflagsapi.com/svg/${city.Country}`}
-            className="w-1/2 opacity-20"
+            className="h-16 opacity-20"
             alt={`${city.Country} flag`}
           />
         </div>
-        <div className="flex flex-wrap justify-end mt-5 font-bold text-sm text-white">
-          <div>
-            <h3 className="uppercase">{city.Name}</h3>
-            <div className="">
-              <h5>{city.Population.toLocaleString()}</h5>
-            </div>
+        <div className="text-right mt-5 font-bold text-sm text-white font-puritan">
+          <h3 className="uppercase">{city.Name}</h3>
+          <div className="">
+            <h5>{`${numberShortener(city.Population)} Population`}</h5>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
