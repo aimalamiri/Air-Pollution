@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import List from '../Components/List';
 import { getCity } from '../Redux/city/citySlice';
 
@@ -16,7 +17,11 @@ export default function Details() {
   }, []);
 
   return (
-    <div>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+    >
       {!loading ? (
         <div>
           <div className="flex justify-between items-center px-4 py-12 bg-gradient-to-br from-blue-700 to-blue-300  text-white font-lato">
@@ -53,6 +58,6 @@ export default function Details() {
           />
         </div>
       ) : null}
-    </div>
+    </motion.div>
   );
 }
