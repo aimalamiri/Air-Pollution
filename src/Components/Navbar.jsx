@@ -5,8 +5,8 @@ import microphone from '../assets/svg/microphone.svg';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-pink-600 py-2 px-4">
-      <Link to="/" className="text-blue-600 hover:text-blue-500">
+    <nav className="flex justify-between items-center bg-gradient-to-bl from-blue-300 to-blue-700 py-2 px-4">
+      <Link to="/">
         <img src={leftArrow} alt="icon" className="h-4" />
       </Link>
       <span className="text-white font-lato">Select a City</span>

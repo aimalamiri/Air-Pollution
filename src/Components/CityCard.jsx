@@ -7,7 +7,7 @@ const CityCard = (props) => {
   const numberShortener = (number) => `${(number / 1000000).toFixed(1)}M`;
 
   return (
-    <div className="city-card p-2 shadow bg-gradient-to-br from-pink-700 to-pink-400 min-h-full">
+    <div className="city-card p-2 shadow bg-gradient-to-tl from-blue-700 to-blue-300 min-h-full">
       <Link to={`/${city.Name}`}>
         <div className="flex justify-center">
           <img

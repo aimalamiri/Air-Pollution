@@ -19,7 +19,7 @@ export default function Details() {
     <div>
       {!loading ? (
         <div>
-          <div className="flex justify-between items-center px-4 py-10 bg-gradient-to-br from-pink-700 to-pink-300  text-white font-lato">
+          <div className="flex justify-between items-center px-4 py-12 bg-gradient-to-br from-blue-700 to-blue-300  text-white font-lato">
             <div className="w-1/2 text-center">
               <h1 className="text-2xl">{city.name}</h1>
               <span className="text-4xl font-bold">

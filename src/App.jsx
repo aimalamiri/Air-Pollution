@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gradient-to-bl from-blue-300 to-blue-700 min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
