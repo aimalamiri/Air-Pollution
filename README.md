@@ -1,46 +1,96 @@
-# Getting Started with Create React App and Redux
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# React Temperature 
 
-## Available Scripts
+ This React application is a simple tool which provides the weather data in Celsius units for the capital cities of some countries, with a flag and population on the homescreen. This application gets data from the [Open Weather Map](https://openweathermap.org/api) API.
 
-In the project directory, you can run:
+## Screenshot
 
-### `npm start`
+![Screenshot image](./src/assets/png/screenshot.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Redux
+- Tailwind CSS
+- Framer Motion
+- Webpack
+- Jest and React testing library (for testing)
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Live Demo Link](https://dev--astonishing-vacherin-c3ff6b.netlify.app/)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open your terminal and navigate to the folder you would like to save the project.
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Type these commands into the terminal:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `git clone git@github.com:aimalamiri/React-Temperature.git` 
+- `cd React-Temperature`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You will need a .env file before you install and run the project. There is included an example file .env.example
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `cp .env.example .env` (if you are using Linux or macOS)
+- If you work on Windows, you can use this command in Git Bash.
 
-## Learn More
+> Note: You'll need to create an API key on the [Open Weather Map](https://openweathermap.org/api) and use it on `.env` file
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Type this command into the terminal:
+
+- `npm install`
+
+### Build
+
+Type these commands into the terminal:
+
+- npm run build
+
+### Run the local server
+
+Type these commands into the terminal:
+
+- `npm run start`
+- Your web browser will open on localhost:3000
+
+### Run tests
+
+Type this command into the terminal:
+
+- `npm run test`
+
+## Authors
+
+👤 **Aimal Amiri**
+
+- GitHub: [@aimalamiri](https://github.com/aimalamiri)
+- Twitter: [@meaimal](https://twitter.com/meaimal)
+- LinkedIn: [Aimal Amiri](https://linkedin.com/in/aimal-amiri)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [Open Weather Map](https://openweathermap.org/api) for the API 
+- Original design idea by [Ballhead](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
