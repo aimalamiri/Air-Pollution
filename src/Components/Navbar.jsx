@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom';
+import leftArrow from '../assets/svg/left-arrow.svg';
+import settingsGear from '../assets/svg/settings-gear.svg';
+import microphone from '../assets/svg/microphone.svg';
 
 export default function Navbar() {
   return (
-    <nav>
+    <nav className="flex justify-between items-center bg-gradient-to-br from-pink-400 to-pink-700 py-2 px-3">
       <Link to="/" className="text-blue-600 hover:text-blue-500">
-        Back
+        <img src={leftArrow} alt="icon" className="h-4" />
       </Link>
+      <span className="text-white font-lato">Weather Condition</span>
+      <div className="flex gap-4">
+        <img src={microphone} alt="icon" className="h-4" />
+        <img src={settingsGear} alt="icon" className="h-4" />
+      </div>
     </nav>
   );
 }
