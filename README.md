@@ -12,6 +12,7 @@
 
 - React
 - Redux
+- React Router
 - Tailwind CSS
 - Framer Motion
 - Webpack
